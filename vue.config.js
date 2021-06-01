@@ -40,7 +40,7 @@ module.exports = {
           }),
           // 只对组件库的生效
           require('postcss-pxtorem')({
-            rootValue: 32.5,
+            rootValue: 37.5,
             minPixelValue: 2,
             propList: ['*'],
             exclude: /src/i
