@@ -17,7 +17,7 @@ module.exports = {
     port: 8080, // 端口
     proxy: {
       '/dev-api': {
-        target: '',
+        target: 'http://localhost:8080',
         pathRewrite: {
           '^/dev-api': ''
         }
