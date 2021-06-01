@@ -19,6 +19,11 @@ const setStorage = (key, value) => {
 const getToken = () => {
   return Cookies.get(TokenKey)
 }
+
+// 设置cookie
+const setToken = (token) => {
+  return Cookies.set(TokenKey, token)
+}
 // md5加密
 const encrypt = (str = '') => {
   return md5(str)
@@ -56,6 +61,7 @@ export {
   getStorage,
   setStorage,
   getToken,
+  setToken,
   encrypt,
   debounce,
   checkPhoneNum,
