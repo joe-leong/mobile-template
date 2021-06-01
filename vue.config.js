@@ -34,7 +34,7 @@ module.exports = {
           // 只对页面的生效
           require('postcss-pxtorem')({
             rootValue: 75,
-            minPixelValue: 0,
+            minPixelValue: 2,
             propList: ['*'],
             exclude: /node_module/i
           }),
